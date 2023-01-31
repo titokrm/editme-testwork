@@ -132,7 +132,7 @@ body.js-sending:after {
   top: 0;
   bottom: 0;
   z-index: 1000;
-  background: url("../../images/loading.gif") no-repeat center;
+  background: url("../images/loading.gif") no-repeat center;
   background-size: 3.13rem auto;
   background-color: #151C22;
   opacity: 0.6;
