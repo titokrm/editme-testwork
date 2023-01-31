@@ -1,0 +1,110 @@
+.signature-dish {
+  padding: rem(80) 0 rem(90);
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__days {
+    flex: 0 0 rem(470);
+    margin-right: rem(32);
+  }
+
+  &__days-item {
+    border-bottom: 1px solid #E7E7E7;
+    padding: rem(20) 0;
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  &__day-name {
+    font-size: rem(24);
+    line-height: em(32, 24);
+    font-weight: 600;
+  }
+
+  &__dish-names {
+    font-size: rem(18);
+    line-height: em(32, 18);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    span {
+      flex: 0 0 auto;
+    }
+  }
+
+  &__divider {
+    display: inline-flex;
+    height: rem(32);
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 rem(12);
+    &:before, &:after {
+      content: '';
+      display: block;
+      width: rem(5);
+      height: rem(5);
+      background-color: #D3B47F;
+      border-radius: 50%;
+    }
+    span {
+      display: block;
+      width: rem(5);
+      height: rem(5);
+      background-color: #D3B47F;
+      border-radius: 50%;
+      margin: 0 rem(12);
+    }
+  }
+
+  &__pictures {
+    flex: 1 1 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: rem(22);
+    position: relative;
+    &:before {
+      position: absolute;
+      width: perc(471, 668);
+      padding-bottom: perc(502, 668);
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid #D3B47F;
+      content: '';
+      z-index: 1;
+    }
+    picture {
+      position: relative;
+      z-index: 5;
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+    picture:first-child {
+      padding-top: perc(152, 323);
+    }    
+  }
+  @media screen and (max-width: $mob-width) {
+    padding: rem(50) 0;
+    &__container {
+      display: block;
+    }
+    &__days {
+      margin-bottom: rem(35);
+      margin-right: 0;
+    }
+    &__dish-names {
+      justify-content: center;
+      > span {
+        flex: 0 0 100%;
+      }
+    }    
+  }
+}

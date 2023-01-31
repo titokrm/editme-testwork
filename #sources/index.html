@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./_head.htm')
+
+<body>
+  <div class="wrapper-global">
+    <header class="header">
+      <div class="header__container">
+        <a href="#" class="header__logo">
+          <picture class="header__logo-white">
+            <source type="image/webp" srcset="images/logo.webp 1x, images/logo@2x.webp 2x">
+            <img src="images/logo.png" alt="logo" srcset="images/logo.png 1x, images/logo@2x.png 2x">
+          </picture>
+          <picture class="header__logo-color">
+            <source type="image/webp" srcset="images/logo-color.webp 1x, images/logo-color@2x.webp 2x">
+            <img src="images/logo-color.png" alt="logo" srcset="images/logo-color.png 1x, images/logo-color@2x.png 2x">
+          </picture>
+        </a>
+        <div class="header__nav js-slideblock">
+          <nav class="menu">
+            <button class="js-close-menu menu__close close-btn">
+              <svg class="icon icon--close close-btn__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <use xlink:href="images/sprite.svg#close"></use>
+              </svg>
+            </button>  
+            <ul class="menu__list">
+              <li class="menu__list-item menu__list-item--active"><a href="#">À la carte</a></li>
+              <li class="menu__list-item"><a href="#">Wijnkaart</a></li>
+              <li class="menu__list-item"><a href="#">Lunchmenu</a></li>
+              <li class="menu__list-item"><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <a href="tel:+32 9 282 57 25" class="header__phone">
+            <svg class="header__phone-icon icon icon--phone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <use xlink:href="images/sprite.svg#phone"></use>
+            </svg>
+            <span class="header__phone-num">+32 9 282 57 25</span>
+          </a>
+          <div class="header__social-btns social-btns social-btns--size--small">
+            <a href="#" class="social-btns__item"><span class="social-btns__name">Fb</span></a>
+            <a href="#" class="social-btns__item"><span class="social-btns__name">Ig</span></a>
+            <a href="#" class="social-btns__item"><span class="social-btns__name">Tw</span></a>
+            <a href="#" class="social-btns__item"><span class="social-btns__name">Yt</span></a>
+          </div>
+        </div>
+        <button class="js-show-menu header__burger">
+          <svg class="icon icon--burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <use xlink:href="images/sprite.svg#burger"></use>
+          </svg>
+        </button>      
+      </div>
+    </header>
+    <main class="main">
+      <section class="main-banner">
+        <picture class="main-banner__picture">
+          <source type="image/webp" srcset="images/mainpicture.webp 1x, images/mainpicture@2x.webp 2x">
+          <img src="images/mainpicture.jpg" alt="picture" srcset="images/mainpicture.jpg 1x, images/mainpicture@2x.jpg 2x">
+        </picture>
+        
+        <div class="main-banner__container">
+          <div class="main-banner__work-time">OPEN EVERYDAY 6AM - 9PM</div>
+          <h1 class="main-banner__slogan">A bad day with lunch is better than a good day without it.</h1>
+          <div class="main-banner__buttons">            
+            <button class="main-banner__btn btn btn--size--big" id="order-table-btn">Reserve a table</button>
+            <div class="main-banner__social-btns social-btns">
+              <a href="#" class="social-btns__item"><span class="social-btns__name">Fb</span></a>
+              <a href="#" class="social-btns__item"><span class="social-btns__name">Ig</span></a>
+              <a href="#" class="social-btns__item"><span class="social-btns__name">Tw</span></a>
+              <a href="#" class="social-btns__item"><span class="social-btns__name">Yt</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="signature-dish">
+        <div class="signature-dish__container">
+          <div class="signature-dish__days">
+            <div class="signature-dish__days-item">
+              <div class="signature-dish__day-name">
+                Woensdag 12/01
+              </div>
+              <div class="signature-dish__dish-names">
+                <span>Salade met Serrano</span>
+                <span class="signature-dish__divider"><span></span></span>
+                <span>Steak Tartaar</span>
+              </div>
+            </div>
+            <div class="signature-dish__days-item">
+              <div class="signature-dish__day-name">
+                Donderdag 13/01
+              </div>
+              <div class="signature-dish__dish-names">
+                <span>Toast Roquefort</span>
+                <span class="signature-dish__divider"><span></span></span>
+                <span>Penne met Kip en Prei</span>
+              </div>
+            </div>
+            <div class="signature-dish__days-item">
+              <div class="signature-dish__day-name">
+                Vrijdag 14/01
+              </div>
+              <div class="signature-dish__dish-names">
+                <span>Verrassing van de Chef</span>
+                <span class="signature-dish__divider"><span></span></span>
+                <span>Penne met Kip en Prei</span>
+              </div>
+            </div>
+            <div class="signature-dish__days-item">
+              <div class="signature-dish__day-name">
+                Vrijdag 15/01
+              </div>
+              <div class="signature-dish__dish-names">
+                <span>Verrassing van de Chef</span>
+                <span class="signature-dish__divider"><span></span></span>
+                <span>Penne met Kip en Prei</span>
+              </div>
+            </div>
+            <div class="signature-dish__days-item">
+              <div class="signature-dish__day-name">
+                Vrijdag 16/01
+              </div>
+              <div class="signature-dish__dish-names">
+                <span>Verrassing van de Chef</span>
+                <span class="signature-dish__divider"><span></span></span>
+                <span>Penne met Kip en Prei</span>
+              </div>
+            </div>
+          </div>
+          <div class="signature-dish__pictures">
+            <picture>
+              <source type="image/webp" srcset="images/1.webp 1x, images/1@2x.webp 2x">
+              <img src="images/1.jpg" alt="picture" srcset="images/1.jpg 1x, images/1@2x.jpg 2x">
+            </picture>
+            <picture>
+              <source type="image/webp" srcset="images/2.webp 1x, images/2@2x.jpg 2x">
+              <img src="images/2.jpg" alt="" srcset="images/2.jpg 1x, images/2@2x.jpg 2x">
+            </picture>
+          </div>          
+        </div>
+        
+      </section>
+      <section class="reviews">
+        <div class="reviews__container">
+          <div class="reviews__slider slider-reviews">
+            <div class="swiper">
+              <div class="slider-reviews__wrapper swiper-wrapper">
+                <div class="slider-reviews__item swiper-slide">
+                  <svg class="slider-reviews__icon icon icon--comma" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <use xlink:href="images/sprite.svg#comma"></use>
+                  </svg>
+                  <h5 class="slider-reviews__title">Goede service, lekker eten, toffe ambiance</h5>
+                  <p class="slider-reviews__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.</p>
+                  <div class="slider-reviews__author">ALAIN HEYNDRICKX</div>
+                </div>
+                <div class="slider-reviews__item swiper-slide">
+                  <svg class="slider-reviews__icon icon icon--comma" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <use xlink:href="images/sprite.svg#comma"></use>
+                  </svg>
+                  <h5 class="slider-reviews__title">Goede service, lekker eten, toffe ambiance</h5>
+                  <p class="slider-reviews__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.</p>
+                  <div class="slider-reviews__author">ALAIN HEYNDRICKX</div>
+                </div>
+                <div class="slider-reviews__item swiper-slide">
+                  <svg class="slider-reviews__icon icon icon--comma" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <use xlink:href="images/sprite.svg#comma"></use>
+                  </svg>
+                  <h5 class="slider-reviews__title">Goede service, lekker eten, toffe ambiance</h5>
+                  <p class="slider-reviews__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.</p>
+                  <div class="slider-reviews__author">ALAIN HEYNDRICKX</div>
+                </div>
+              </div>
+            </div>            
+            <button class="slider-reviews__prev-btn">
+              <svg class="icon icon--arrow-left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <use xlink:href="images/sprite.svg#arrow-left"></use>
+              </svg>
+            </button>
+            <button class="slider-reviews__next-btn">
+              <svg class="icon icon--arrow-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <use xlink:href="images/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="drop-window">
+    <div class="drop-window__overlay js-close-win"></div>
+    <div class="drop-window__window" id="formWindow">
+      <button class="drop-window__close close-btn js-close-win">
+        <svg class="icon icon--close close-btn__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <use xlink:href="images/sprite.svg#close"></use>
+        </svg>
+      </button>      
+      <form action="#" class="form-request" id="form">
+        <div class="form-request__field-wrap form-request__field-wrap--width--one-half form-request__field-wrap--mob-width--full field">          
+          <input class="field__field-control field__field-control--type--input js-req" type="text" placeholder="Input your name" name="name">
+        </div>
+        <div class="form-request__field-wrap form-request__field-wrap--width--one-half form-request__field-wrap--mob-width--full field">
+          <input class="field__field-control field__field-control--type--input js-req js-email" type="email" placeholder="Input your email" name="email">
+        </div>
+        <div class="form-request__field-wrap form-request__field-wrap--width--one-half form-request__field-wrap--mob-width--full field">
+          <label class="field__label">Input required date</label>          
+          <input class="field__field-control field__field-control--type--input js-req" type="date" name="date">
+        </div>
+        <div class="form-request__field-wrap form-request__field-wrap--width--one-half form-request__field-wrap--mob-width--full field">
+          <label class="field__label">Input required time</label>
+          <input class="field__field-control field__field-control--type--input js-req js-time" type="time" name="time">
+        </div>
+        <div class="form-request__field-wrap form-request__field-wrap--width--full field">
+          <textarea class="field__field-control field__field-control--type--textarea" name="specialRecuest" id="" placeholder="Input your special request"></textarea>
+        </div>
+        <div class="form-request__field-wrap form-request__field-wrap--width--full field">
+          <button class="field__field-control field__field-control--type--btn btn btn--size--medium" type="submit">Reserve a table</button>
+        </div>
+      </form>
+    </div>    
+    <div class="drop-window__window" id="sendSuccesfullWindow">
+      <button class="drop-window__close close-btn js-close-win">
+        <svg class="icon icon--close close-btn__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <use xlink:href="images/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="drop-window__messge drop-window__messge--style--ok">
+        Order successfull.
+      </div>
+    </div>
+    <div class="drop-window__window" id="sendErrorWindow">
+      <button class="drop-window__close close-btn js-close-win">
+        <svg class="icon icon--close close-btn__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <use xlink:href="images/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="drop-window__messge drop-window__messge--style--error">
+        Error! 
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/menuBurger.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

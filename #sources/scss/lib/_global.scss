@@ -1,0 +1,129 @@
+:root {
+  font-size: $rem-size * 1px;
+  height: 100%;
+}
+
+body {
+  font-size: 1rem;
+  min-height: 100%;
+  font-family: $default-font;
+  background-color: #fff;
+  font-weight: normal;
+  font-style: normal;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+[class*="__container"] {
+  max-width: calc($width-container / $rem-size) * 1rem;  
+  margin: auto;
+  width: 100%;
+  padding: 0 calc($padding-container / $rem-size) * 1rem;  
+  @media screen and (max-width: $xs-mob-width) {
+    padding: 0 calc($padding-container-mob / $rem-size) * 1rem;
+  }
+}
+
+body.scroll-lock {
+  position: fixed;
+	left: 0;
+	width: 100%;
+  overflow: hidden !important;
+  touch-action: none;
+}
+
+body.js-sending {
+  &:after {
+    position: fixed;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: url("../../images/loading.gif") no-repeat center;
+    background-size: rem(50) auto;
+    background-color: #151C22;
+    opacity: 0.6;
+  }
+}
+
+.wrapper-global {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  //flex: 1 1 auto;
+}
+body.scroll-lock .wrapper-global {
+  overflow-y: scroll;
+}
+
+.picture-cover {
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+a {
+  color: #3A4574;
+  transition: text-shadow $animate-time ease-in-out;
+  &:hover {
+    text-shadow: 0 0 .06em currentColor, 0 0 .06em currentColor;
+  }
+}
+
+.icon {
+  display: inline-block;
+  transition: stroke $animate-time ease-in-out, fill $animate-time ease-in-out;
+  &--close {
+    width: rem(28);
+    height: rem(28);
+    fill: #3A4574;
+  }
+
+  &--burger {
+    width: rem(28);
+    height: rem(28);
+    fill: #fff;
+    display: block;
+  }
+
+  &--phone {
+    width: rem(24);
+    height: rem(24);
+    fill: #D3B47F;
+  }
+
+  &--comma {
+    fill: #D3B47F;
+    width: rem(83);
+    height: rem(58);
+  }
+
+  &--arrow-left {
+    stroke: #D3B47F;
+    width: rem(70);
+    height: rem(70);    
+    fill: none;
+    display: block;
+  }
+
+  &--arrow-right {
+    stroke: #D3B47F;
+    width: rem(70);
+    height: rem(70);
+    fill: none;
+    display: block;
+  }
+
+}

@@ -1,0 +1,116 @@
+.reviews {
+  padding: rem(220) 0;
+  background-color: #3A4574;
+  color: #fff;
+  &__container {
+  }
+
+  &__slider {
+    max-width: rem(785 + 140);
+    padding: 0 rem(70);
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
+  @media screen and (max-width: $mob-width) {
+    padding: rem(80) 0;
+  }
+  @media screen and (max-width: $xs-mob-width) {
+    &__slider {
+      padding: 0;
+    }
+  }
+}
+.slider-reviews {
+  &__wrapper {
+  }
+
+
+  &__icon {
+    margin-bottom: rem(34);
+  }
+
+  &__title {
+    font-size: rem(36);
+    line-height: em(40, 36);
+    font-weight: 600;
+    color: #D3B47F;
+    margin-bottom: rem(20);
+  }
+
+  &__text {
+    font-size: rem(16);
+    line-height: em(40, 16);
+    margin-bottom: rem(40);
+  }
+
+  &__author {
+    font-size: rem(24);
+    line-height: em(40, 24);
+    font-weight: 600;
+    letter-spacing: 0.245em;
+    color: #D3B47F;
+  }
+
+  &__prev-btn {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  &__next-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  &__prev-btn:hover, &__next-btn:hover {
+    .icon--arrow-left, .icon--arrow-right {
+      stroke: #fff;
+    }
+  }
+  @media screen and (max-width: $tab-width) {
+    margin: 0 rem(-$padding-container);
+  }
+  @media screen and (max-width: $mob-width) {
+    &__title {
+      font-size: rem(32);
+    }
+    &__text {
+      font-size: rem(14);
+    }
+    &__author {
+      font-size: rem(20);
+    }
+  }
+  @media screen and (max-width: $xs-mob-width) {
+    margin: 0 rem(-$padding-container-mob);
+    &__title {
+      font-size: rem(28);
+    }
+    &__text {
+      font-size: rem(14);
+    }
+    &__author {
+      font-size: rem(18);
+    }
+    &__wrapper {
+      padding: 0;
+    }
+    &__prev-btn, &__next-btn {
+      display: none;
+    }
+    &__item {
+      padding: 0 rem(25);
+    }
+  }
+}

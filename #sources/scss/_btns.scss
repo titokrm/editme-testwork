@@ -1,0 +1,112 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  background-color: #3A4574;
+  color: #fff;
+  font-family: inherit;
+  transition: background-color $animate-time ease-in-out;
+  &:hover {
+    background-color: #4f5b91;
+  }
+  &--size--medium {
+    height: rem(80);
+    padding: 0 rem(20);
+    min-width: rem(215);
+    font-size: rem(18);
+    line-height: em(24, 18);
+    font-weight: 500;
+  }
+  &--size--big {
+    height: rem(100);
+    padding: 0 rem(20);
+    min-width: rem(270);
+    font-size: rem(18);
+    line-height: em(24, 18);
+    font-weight: 500;
+  }
+  @media screen and (max-width: $mob-width) {
+    &--size--medium {
+      height: rem(60);
+      min-width: rem(160);
+      @include fontrem(16, 22);
+    }
+    &--size--big {
+      height: rem(75);
+      min-width: rem(200);
+    }
+  }
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  padding: rem(10);
+  cursor: pointer;
+  &:hover {
+    .close-btn__icon {
+      fill: #000;
+    }
+  }
+}
+
+.social-btns {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;  
+
+  &__item {
+    flex: 0 0 rem(48);
+    width: rem(48);
+    height: rem(48);
+    color: inherit;
+    border: 1px solid currentColor;
+    text-decoration: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: rem(25);
+    position: relative;
+    //box-shadow: 0 0 1px currentColor;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 50%;
+      outline: 2px solid currentColor;
+      opacity: 0;
+      transition: opacity $animate-time ease-in-out;
+    }
+    &:hover {
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__name {
+    font-size: rem(16);
+    line-height: em(24, 16);
+    font-weight: 600;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+  }
+  &--size--small {
+    .social-btns__item {
+      flex: 0 0 rem(32);
+      width: rem(32);
+      height: rem(32);
+      &:not(:last-child) {
+        margin-right: rem(20);
+      }
+    }
+  }
+}

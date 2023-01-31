@@ -1,0 +1,83 @@
+.main-banner {
+  position: relative;
+  padding: rem(180) 0;
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+
+  &__picture {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  }
+  &__container {
+    position: relative;
+    z-index: 5;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  &__work-time {
+    font-size: rem(24);
+    line-height: em(32, 24);
+    font-weight: 500;
+    margin-bottom: rem(24);
+  }
+
+  &__slogan {
+    font-size: rem(64);
+    line-height: em(88, 64);
+    font-weight: bold;
+    margin-bottom: rem(40);
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__social-btns {
+    margin-left: rem($padding-container);
+  }
+  @media screen and (max-width: $tab-width) {
+    padding: 5.85rem 0;
+    min-height: 70vh;
+  }
+  @media screen and (max-width: $mob-width) {
+    padding-bottom: rem(50);
+    text-align: center;
+    &__slogan {
+      font-size: rem(40);
+    }
+    &__work-time {
+      font-size: rem(22);
+    }
+    &__buttons {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__social-btns {
+      flex: 0 0 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: rem(75);
+      margin-left: 0;      
+    }
+  }
+  @media screen and (max-width: $xs-mob-width) {
+    &__slogan {
+      font-size: 2rem;
+    }
+    &__work-time {
+      font-size: 1rem;
+    }    
+  }
+}

@@ -1,0 +1,55 @@
+.drop-window {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 200;
+  overflow: auto;
+  padding: 10vh 5.62vw;
+  display: flex;
+  visibility: hidden;
+  transition: opacity $animate-time ease-in-out;
+  opacity: 0;
+  &__overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #151C22;
+    opacity: 0.6;
+    z-index: 1;
+  }
+
+  &__window {
+    margin: auto;
+    width: rem(768);
+    padding: 3.6rem rem(25) rem(25);
+    background-color: #fff;
+    box-shadow: rem(15) rem(15) rem(30) #000;
+    position: relative;
+    z-index: 2;
+    display: none;
+  }
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &__messge {
+    @include fontrem(24, 32);
+    text-align: center;
+    margin: 0 0 rem(20);
+   &--style {
+    &--ok {
+      color: #3A4574;
+    }
+    &--error {
+      color: #c00909;
+    }
+   }
+  }
+
+}
