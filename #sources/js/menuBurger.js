@@ -128,7 +128,7 @@ function menuSlide({
   mobWidth = mobWidthSetting;
   $(document).on('click', '.' + burger, (event) => {
     event.preventDefault();    
-    over = $('.' + menu).parent().prepend(`<div class="${overlay} ${closeMenu}" style="position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 40; background-color: #151C22; opacity: .6;"></div>`);
+    $('.' + menu).parent().prepend(`<div class="${overlay} ${closeMenu}" style="position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 40; background-color: #151C22; opacity: .6;"></div>`);
     // console.log('Добавил оверлей ', over);    
     $('.' + menu).toggleClass('active');
     $('.' + overlay).toggleClass('active');
